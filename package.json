@@ -1,8 +1,8 @@
 {
-  "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME",
-  "name": "lol",
+  "name": "moviewebsite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ahmedpopa1.github.io/imdb",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
