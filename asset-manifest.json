@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/imdb/static/css/main.dc4da8a6.css",
-    "main.js": "/imdb/static/js/main.a7a155fa.js",
+    "main.js": "/imdb/static/js/main.f82a0701.js",
     "static/media/2.jpg": "/imdb/static/media/2.40452c28e6e49f764034.jpg",
     "static/media/lool2.jpg": "/imdb/static/media/lool2.1e391bc817b26320fbdb.jpg",
     "static/media/lool1.jpg": "/imdb/static/media/lool1.0c9a0382bc68c9893e4b.jpg",
@@ -18,10 +18,10 @@
     "static/media/lol20.jpg": "/imdb/static/media/lol20.138cff3bedf7b62550c3.jpg",
     "index.html": "/imdb/index.html",
     "main.dc4da8a6.css.map": "/imdb/static/css/main.dc4da8a6.css.map",
-    "main.a7a155fa.js.map": "/imdb/static/js/main.a7a155fa.js.map"
+    "main.f82a0701.js.map": "/imdb/static/js/main.f82a0701.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4da8a6.css",
-    "static/js/main.a7a155fa.js"
+    "static/js/main.f82a0701.js"
   ]
 }
