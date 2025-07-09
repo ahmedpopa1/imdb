@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/imdb/static/css/main.dc4da8a6.css",
+    "main.js": "/imdb/static/js/main.a7a155fa.js",
+    "static/media/2.jpg": "/imdb/static/media/2.40452c28e6e49f764034.jpg",
+    "static/media/lool2.jpg": "/imdb/static/media/lool2.1e391bc817b26320fbdb.jpg",
+    "static/media/lool1.jpg": "/imdb/static/media/lool1.0c9a0382bc68c9893e4b.jpg",
+    "static/media/lool3.jpg": "/imdb/static/media/lool3.53e1a8c077aef185ea17.jpg",
+    "static/media/lool4.jpg": "/imdb/static/media/lool4.35faa388204b153fa281.jpg",
+    "static/media/lol7.jpg": "/imdb/static/media/lol7.e241f6cd761a43b4ac4e.jpg",
+    "static/media/car.jpg": "/imdb/static/media/car.3772f733bf4c2dd53236.jpg",
+    "static/media/start.png": "/imdb/static/media/start.9e60d440a5edf25e894c.png",
+    "static/media/cover.jpg": "/imdb/static/media/cover.752153a9e6f4f7b88c26.jpg",
+    "static/media/lol1.jpg": "/imdb/static/media/lol1.d02537bc84c0a8252ba4.jpg",
+    "static/media/logo.png": "/imdb/static/media/logo.2d4aa5438ad2a3a16512.png",
+    "static/media/lol5.jpg": "/imdb/static/media/lol5.b5c40f0d7c17eb9a884e.jpg",
+    "static/media/lol2.jpg": "/imdb/static/media/lol2.0e9dee125b41f81c149a.jpg",
+    "static/media/lol20.jpg": "/imdb/static/media/lol20.138cff3bedf7b62550c3.jpg",
+    "index.html": "/imdb/index.html",
+    "main.dc4da8a6.css.map": "/imdb/static/css/main.dc4da8a6.css.map",
+    "main.a7a155fa.js.map": "/imdb/static/js/main.a7a155fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4da8a6.css",
+    "static/js/main.a7a155fa.js"
+  ]
+}
