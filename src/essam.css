@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*////////////////////////////////////////home css////////////////////////////////////////*/
+/* Base Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-logo-container img.logo {
+  width: 200px;
+}
+
+/* Links container - hidden on mobile by default */
+.navbar-links-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* Links styling */
+.navbar-links-container a {
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Menu icon */
+.navbar-menu-container {
+  display: block;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* When active (menu open) */
+.navbar-links-container.active {
+  display: flex;
+}
+
+/* Home section background */
+.home-container {
+  background-image: url('./Assets/car.jpg');
+  background-position: left;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+/* Tablet & up */
+@media (min-width: 768px) {
+  .navbar-menu-container {
+    display: none;
+    /* hide hamburger */
+  }
+
+  .navbar-links-container {
+    display: flex;
+    /* show links inline */
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+  }
+
+  .navbar-links-container a {
+    margin-right: 1rem;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .home-container {
+    padding: 50px 80px;
+  }
+}
+
+/* Desktop & up */
+@media (min-width: 1024px) {
+  nav {
+    padding: 20px 80px;
+  }
+
+  .navbar-links-container a {
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+  }
+
+  .logo {
+    width: 220px;
+  }
+}
+
+/*/////////////////////////////////////about css///////////////////////////////////////////*/
+.about {
+  background-image: url('./Assets/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.statement {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: right;
+  justify-content: center;
+  color: #f5f3f1;
+}
+
+/***************************slider css***************************************/
+
+.slider-container {
+  background-color: #2c2c2c;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.slide-panel {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.next,
+.prev {
+  width: 40px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.photo {
+  min-width: 100%;
+  height: 100%;
+}
+
+.next:hover,
+.prev:hover {
+  transform: scale(1.25) translateY(-50%);
+}
+
+/*///////////////////////////////////work css/////////////////////////////////////////////*/
+.work {
+  background-image: url('2.jpg');
+  background-size: cover;
+  /* Ensure the background image covers the entire container */
+  background-position: center;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Set minimum height to ensure full viewport coverage */
+}
+
+.search {
+  padding-top: 20px;
+  width: 100%;
+  /* Ensure it spans the width of its container */
+  text-align: center;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  /* Adjust width as needed */
+  max-width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the element's total width */
+}
+
+.work-section-wrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  /* Adjust max-width as per your design */
+  width: 100%;
+  /* Ensure it takes full width of its container */
+}
+
+.work-section-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work-section-info {
+  width: 290px;
+  min-height: 350px;
+  /* Adjust initial size */
+  background-color: rgba(131, 131, 131, 0.8);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  color: #ffffff;
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, min-height 0.3s ease-in-out;
+  /* Include width and height transitions */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.work-section-info.selected img {
+  width: 250px;
+  height: auto;
+}
+
+/* بس للعنصر المحدد - single item */
+.work-section-info.selected {
+  /* يمسك كل الأعمدة لما يكون مفصل */
+  grid-column: 1 / -1;
+  /* يوسع للعرض الكامل */
+  width: 100%;
+  max-width: 950px;
+  /* يوقف أي تحجيم hover أو transitions مالهاش لازمة هنا */
+  transform: none;
+}
+
+/* تحت 768 يبقى عمود واحد full-width */
+@media (max-width: 767px) {
+  .work-section-info.selected {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* بس للعنصر المحدد - single item */
+.work-section-info.selected {
+  /* يمسك كل الأعمدة لما يكون مفصل */
+  grid-column: 1 / -1;
+  /* يوسع للعرض الكامل */
+  width: 100%;
+  max-width: 950px;
+  /* يوقف أي تحجيم hover أو transitions مالهاش لازمة هنا */
+  transform: none;
+}
+
+/* تحت 768 يبقى عمود واحد full-width */
+@media (max-width: 767px) {
+  .work-section-info.selected {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+.work-section-info:hover {
+  transform: scale(1.05);
+}
+
+.work-section-bottom {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-section-info img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work-section-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.work-section-info p {
+  flex: 1;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.info-box-details {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box-details p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.info-box-details p:last-child {
+  margin-bottom: 0;
+}
+
+/*/////////////////////////////////////footer css///////////////////////////////////////////*/
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Reem Kufi', sans-serif;
+  background-position: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.footer-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo-container {
+  width: 120px;
+  height: 60px;
+
+  max-width: 110px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  color: #cecece;
+  margin-top: 2.5rem;
+}
+
+.footer-icons svg {
+  margin-right: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-icons svg:hover {
+  color: #fff;
+}
+
+.footer-section-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  font-size: larger;
+  flex: 1;
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+  gap: 10px;
+}
+
+.footer-section-columns span {
+  margin: 0.25rem 0;
+  font-weight: 600;
+  color: #cecece;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section-columns span:hover {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .footer-section-one {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-section-two {
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-section-two {
+    gap: 80px;
+  }
+}
+
+
+
+/*///////////////////////////////////sign up css/////////////////////////////////////////////*/
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+
+}
+
+.error-message {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input {
+  position: relative;
+}
+
+.inputs {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.input input {
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 20px;
+}
+
+.forgot-password {
+  padding-left: 60px;
+  margin-top: 25px;
+  color: #f5f3f1;
+  font-size: 15px;
+}
+
+.forgot-password span {
+  color: #cf8012;
+  cursor: pointer;
+}
+
+.submit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 3px
+}
+
+.submit:hover {
+  background-color: #665f5f;
+}
+
+.prof {
+  position: absolute;
+  top: 62.5%;
+  left: 65%;
+  width: 700px;
+  padding: 40px;
+  margin: auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, .9);
+  box-sizing: border-box;
+  box-shadow: 10px 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+
+}
+
+.top {
+  height: 5px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profimg img {
+  height: 300px;
+  border-radius: 100px;
+  margin-bottom: 100px;
+  background-color: #9b4e07;
+  padding: 5px;
+  align-items: center;
+}
+
+.proftitle {
+
+  display: inline-block;
+  padding: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 30px;
+  letter-spacing: 2px
+}
+
+.desc {
+  font-size: 20px;
+  font-style: italic;
+  color: #ffffffe0;
+  margin-bottom: 50px;
+}
+
+.wel {
+  font-size: x-large;
+  color: #ffffff;
+  font-style: inherit;
+}
+
+.lol {
+  border-top: 0.6px solid rgb(255, 145, 0);
+  margin-bottom: 15px;
+}
+
+.klam {
+  color: #ffffff;
+  font-size: larger;
+}
+
+.container1 {
+  position: absolute;
+  left: 50%;
+  width: 250px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, .9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 220px;
+
+}
